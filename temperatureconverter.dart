@@ -35,19 +35,20 @@ void main() {
       case '1':
         stdout.write('Masukkan suhu dalam Fahrenheit: ');
         var fahrenheit = double.parse(stdin.readLineSync()!);
-        var celsius = converter.fahrenheitToCelsius(fahrenheit);
+        var celsius =
+            converter.fahrenheitToCelsius(fahrenheit).toStringAsFixed(1);
         print('$fahrenheit derajat Fahrenheit = $celsius derajat Celsius');
         break;
       case '2':
         stdout.write('Masukkan suhu dalam Reamur: ');
         var reamur = double.parse(stdin.readLineSync()!);
-        var celsius = converter.reamurToCelsius(reamur);
+        var celsius = converter.reamurToCelsius(reamur).toStringAsFixed(1);
         print('$reamur derajat Reamur = $celsius derajat Celsius');
         break;
       case '3':
         stdout.write('Masukkan suhu dalam Kelvin: ');
         var kelvin = double.parse(stdin.readLineSync()!);
-        var celsius = converter.kelvinToCelsius(kelvin);
+        var celsius = converter.kelvinToCelsius(kelvin).toStringAsFixed(1);
         print('$kelvin derajat Kelvin = $celsius derajat Celsius');
         break;
       case '4':
